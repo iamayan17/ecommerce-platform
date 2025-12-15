@@ -1,0 +1,41 @@
+{%load static%}
+<html>
+<head>
+<title>VGSE</title>
+<link rel="icon" href="{%static 'aa.jpg'%}">
+<link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+<nav>
+	<div class="logo">
+	<h1>LOGIN TO SHOPZY  </h1>
+        <img src="{%static 'bb.jpg'%}">
+	</div>
+
+	<div class="links">
+	<a href="index">Home </a>
+	<a href="Student">Students</a>
+	<a href="">COLLEGE</a>
+	<a href="">About</a>
+	</div>
+</nav>
+
+<form action="SRA" method="POST">
+<h3>{{data}}</h3>
+{% csrf_token %}
+<fieldset>
+<h2> Customer Login</h2>
+
+<label>Username:</label>
+<input type="text" placeholder="Enter username" name="full_name" required><br>
+
+<label>Password:</label>
+<input type="password" placeholder="Enter Password" name="password" required><br>
+
+<button>Sign in </button>
+<p>Don't have an Account?---> <a href="register"> Register</a></p>
+</fieldset>
+
+</form>
+</body>
+</html>

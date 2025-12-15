@@ -1,0 +1,86 @@
+body{
+background-image:url('aa.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+}
+nav{
+background-color:rgba(0,0,0,0.2);   /* color 0 to 255, alpha 0 to 1 */
+width:100%;
+height:300px;
+}
+.logo{
+display:flex;
+justify-content:space-between;
+padding:25px;  /*inside of the content it takes space */
+}
+.logo h1{
+ecolor:white;
+font-size:30px;
+margin:auto;    /*outside of the content it takes space */
+margin-top:60px;
+}
+.logo img{
+border-radius:50%;
+border:3px solid white;
+}
+.links{
+width:35%;
+padding:20px;
+background-color:rgba(0,200,200,0.75);
+margin:auto;
+}
+.links a{
+color:white;
+text-decoration:none;
+font-size:21px;
+margin-left:30px;
+font-weight:bold;
+text-transform:uppercase;
+}
+.content{
+width:40%;
+margin:auto;
+margin-top:100px;
+border:3px solid white;
+padding:15px;
+line-height:2;
+color:white;
+}
+.content h3{
+text-align:center;
+font-size:25px;
+}
+.content p{
+text-indent:39px;
+font-style:italic;
+}
+fieldset{
+width:30%;
+padding:34px;
+color:white;
+line-height:2;
+border:4px solid white;
+}
+fieldset h2{
+text-align:center;
+font-size:26px;
+}
+fieldset label{
+font-size:18px;
+font-weight:bold;
+}
+fieldset input{
+padding:8px;
+}
+button{
+margin-left:150px;
+padding:8px;
+color:white;
+background-color:rgba(0,100,200,0.5);
+margin-top:34px;
+}
+fieldset a{
+color:yellow;
+font-weight:bold;
+}

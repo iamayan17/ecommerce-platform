@@ -1,0 +1,57 @@
+{%load static%}
+<html>
+<head>
+<title>VGSE</title>
+<link rel="icon" href="{%static 'aa.jpg'%}">
+<link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+<nav>
+	<div class="logo">
+	<h1> Welcome to shopyz </h1>
+        <img src="{%static 'bb.jpg'%}" width=150 height=150>
+        </div>
+
+	<div class="links">
+	<a href="index">Home </a>
+	<a href="Student">Customer</a>
+	<a href="">CART</a>
+	<a href="">About</a>
+	</div>
+</nav>
+
+<form action="SRA" method="POST">
+<h3>{{data}}</h3>
+{% csrf_token %}
+
+<fieldset>
+<h2> Student Register</h2>
+<label>Fullname:</label>
+<input type="text" placeholder="Enter your name" name="full_name" required><br>
+
+<label>Email:</label>
+<input type="email" placeholder="abc123@gmail.com" name="email" required><br>
+
+<label>Contact No:</label>
+<input type="number" placeholder="9874561230" name="contact_no" required><br>
+
+<label>Gender:</label>
+<select name="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Others</option>
+</select><br>
+
+<label>Username:</label>
+<input type="text" placeholder="Enter username" name="username" required><br>
+
+<label>Password:</label>
+<input type="password" placeholder="Enter Password" name="password" required><br>
+
+<button>Register </button>
+<p>Already registered? ---> <a href="Student">Sign in</a></p>
+</fieldset>
+
+</form>
+
+</html>
