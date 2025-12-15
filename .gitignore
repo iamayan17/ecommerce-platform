@@ -1,0 +1,14 @@
+# Django
+db.sqlite3
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
